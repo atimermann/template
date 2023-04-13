@@ -2,16 +2,19 @@
   "name": "template",
   "version": "0.0.1",
   "description": "Modelo de projeto javascript (Nodejs ou Fronend), apenas configurações básicas como eslint",
-  "main": "sec/main.js",
+  "main": "src/main.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
     "fixlint": "eslint --fix .",
-    "dev": "node src/main.mjs"
+    "dev": "node src/main.mjs",
+    "docker:build": "docker build -t <IMAGE_NAME>/<IMAGE_NAME> .",
+    "docker:run": "docker run --rm -it --name <CONTAINER_NAME> <IMAGE_NAME>/<IMAGE_NAME>",
+    "docker:exec": "docker exec -it  <CONTAINER_NAME> bash"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atimermann/template.git"
+    "url": "CONFIGURAR REPOSITÒRIO GIT"
   },
   "author": "André Timermann",
   "license": "ISC",
