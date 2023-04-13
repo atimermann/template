@@ -13,18 +13,7 @@ module.exports = {
     'standard'
   ],
   rules: {
-    quotes: ['error', 'single'],
-    // Problema ao tentar criar componente index
-    'vue/multi-word-component-names': 'off',
-    'vue/no-multiple-template-root': 'off',
-    'vue/max-attributes-per-line': ['error', {
-      singleline: {
-        max: 3
-      },
-      multiline: {
-        max: 1
-      }
-    }]
+    quotes: ['error', 'single']
   },
   overrides: [
     {
